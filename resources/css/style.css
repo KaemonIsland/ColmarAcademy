@@ -1,0 +1,169 @@
+body {
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.header {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #64697F;
+  font-family: Merriweather, serif;
+}
+a {
+  text-decoration: none;
+}
+/* Navigation */
+.navbar {
+  position: fixed;
+  justify-content: space-between;
+  top: 0px;
+  z-index: 1;
+  background-color: #C7D2FF;
+  width: 100%;
+  height: 70px;
+}
+.logo {
+  margin-left: 1.5rem;
+}
+.logo img {
+  height: 2rem;
+}
+.logo h1 span {
+  color: gray;
+}
+.navigation {
+  margin-right: 1.5rem;
+}
+.navigation a {
+  margin: 0 0.5rem;
+  color: black;
+}
+/* Header */
+header {
+  background-color: #9FA8CC;
+  margin-top: 70px;
+  justify-content: flex-start;
+
+}
+header img {
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+.banner {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 30%;
+}
+.banner h3 {
+  margin: 2rem 0;
+  font-size: 1.25em;
+}
+.banner a {
+  align-self: flex-start;
+  font-size: 1.25em;
+  color: white;
+  background-color: #7B94FF;
+  padding: 0.5rem 35%;
+}
+/* General Articles */
+.grids {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.box-1{
+  margin: 2rem 1.5rem;
+  max-width: 60%;
+}
+.box-1 img {
+  width: 100%;
+}
+.quote {
+  color: gray;
+  margin: 1.5rem auto;
+}
+.practice {
+  margin-bottom: 2rem;
+}
+/* Side Article */
+.information {
+  margin-top: 2rem;
+}
+.side-tab {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 1rem;
+  border: 2px solid gray;
+}
+.info-image{
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+.info h3 {
+  font-size: 1.25em;
+}
+.info p{
+  margin: 0.5 0;
+}
+.info a {
+  color: blue;
+}
+/* Start Learning */
+.start-learning {
+  background-color: #9FA8CC;
+}
+.wrap {
+  margin: 2rem 4.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.start {
+  padding: 2rem 0;
+  text-align: center;
+}
+.learn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  background-color: #C7D2FF;
+  border: 1px solid gray;
+  margin-bottom: 2rem;
+  width: 30%;
+}
+.learn img {
+  height: auto;
+  width: 100%;
+}
+.text {
+  margin-left: 1rem;
+}
+.text h2 {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.text h3 {
+  margin: 0.5rem auto;
+  font-size: 1.3em;
+}
+.text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2em;
+}
+/* Video */
+.thesis {
+  text-align: center;
+}
+video {
+  max-width: 100%;
+  height: auto;
+}
