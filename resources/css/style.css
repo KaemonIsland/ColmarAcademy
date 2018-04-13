@@ -2,106 +2,73 @@ body {
   font-size: 16px;
   box-sizing: border-box;
   line-height: 1.5;
+  font-family: Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+  margin: 0 0.5rem;
+}
+figure {
+  justify-content: flex-start;
+  border: 1px solid #556CCC;
+  background-color: #B7C5FF;
+}
+h1 {
+  font-size: 2.3em;
+  font-weight: bold;
+  color: hsla(0, 70%, 0%, 0.85);
+  font-family: Merriweather, serif;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+p {
+  margin: 1rem auto;
+}
+.shadow {
+  box-shadow: 3px 3px 10px #000;
 }
 .flex {
   display: flex;
   align-items: center;
 }
-.header {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #64697F;
-  font-family: Merriweather, serif;
-}
-a {
-  text-decoration: none;
-}
 /* Navigation */
 .navbar {
-  position: fixed;
   justify-content: space-between;
+  position: fixed;
   top: 0px;
-  z-index: 1;
-  background-color: #C7D2FF;
+  z-index: 3;
+  background-color: #6B87FF;
   width: 100%;
   height: 70px;
-}
-.logo {
-  margin-left: 1.5rem;
+  border-bottom: 1px solid #556CCC;
 }
 .logo img {
   height: 2rem;
 }
-.logo h1 span {
-  color: gray;
-}
-.navigation {
-  margin-right: 1.5rem;
-}
-.navigation a {
-  margin: 0 0.5rem;
-  color: black;
-}
 /* Header */
 header {
-  background-color: #9FA8CC;
-  margin-top: 70px;
-  justify-content: flex-start;
-
-}
-header img {
-  margin: 2rem 1.5rem;
-  width: 60%;
+  margin-top: 64px;
+  background-color: #B7C5FF;
 }
 .banner {
+  display: flex;
+  align-items: center;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 30%;
 }
-.banner h3 {
-  margin: 2rem 0;
-  font-size: 1.25em;
-}
+
 .banner a {
   align-self: flex-start;
-  font-size: 1.25em;
+  font-size: 1.2em;
   color: white;
   background-color: #7B94FF;
-  padding: 0.5rem 35%;
-}
-/* General Articles */
-.grids {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-.box-1{
-  margin: 2rem 1.5rem;
-  max-width: 60%;
-}
-.box-1 img {
-  width: 100%;
-}
-.quote {
-  color: gray;
-  margin: 1.5rem auto;
-}
-.practice {
-  margin-bottom: 2rem;
+  padding: 0.5rem 30%;
+  margin: 0;
 }
 /* Side Article */
-.information {
-  margin-top: 2rem;
-}
-.side-tab {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0 1rem;
-  border: 2px solid gray;
-}
 .info-image{
-  width: 35%;
   height: auto;
   margin: 1rem;
 }
@@ -113,35 +80,18 @@ header img {
 }
 .info a {
   color: blue;
+  margin: 0;
 }
 /* Start Learning */
 .start-learning {
-  background-color: #9FA8CC;
+  background-color: #B7C5FF;
 }
-.wrap {
-  margin: 2rem 4.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.start {
-  padding: 2rem 0;
+.center-head {
   text-align: center;
 }
 .learn {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: center;
-  background-color: #C7D2FF;
-  border: 1px solid gray;
-  margin-bottom: 2rem;
-  width: 30%;
-}
-.learn img {
-  height: auto;
-  width: 100%;
+  background-color: #fff;
+  border: 1px solid #556CCC;
 }
 .text {
   margin-left: 1rem;
@@ -159,11 +109,178 @@ header img {
   margin-bottom: 1.5rem;
   font-size: 1.2em;
 }
-/* Video */
-.thesis {
-  text-align: center;
+/* Footer */
+footer {
+  background-color: #B7C5FF;
+  border-top: 1px solid #556CCC;
 }
-video {
-  max-width: 100%;
-  height: auto;
+@media only screen and (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+  figure {
+    margin-left: 1rem;
+    margin-bottom: 4px;
+  }
+  .desk-flex {
+    display: flex;
+    align-items: center;
+  }
+  /* Navigation */
+  .logo {
+    margin-left: 1.5rem;
+  }
+  .logo h3 span {
+    color: #B7C5FF;
+  }
+  .navigation {
+    margin-right: 1.5rem;
+  }
+  /* header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .banner {
+    width: 30%;
+  }
+  .banner h2 {
+    margin: 1.5rem 0;
+  }
+  /* Image and content alignment */
+  .section {
+    display: flex;
+    width: 100%;
+  }
+  .left-side {
+    margin: 2rem 1.5rem;
+    max-width: 60%;
+  }
+  .left-side img,
+  video {
+    width: 100%;
+  }
+  /* General Articles */
+  .quote {
+    color: gray;
+    margin: 1.5rem auto;
+  }
+  .practice {
+    margin-bottom: 2rem;
+  }
+  /* Side Articles */
+  .information {
+    margin-top: 2rem;
+  }
+  .info-image {
+    width: 35%;
+  }
+  /* Start Learning */
+  .center-head {
+    padding: 2rem 0;
+  }
+  .wrap {
+    margin: 0 4.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .learn {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+    width: 30%;
+  }
+  .learn img {
+    height: auto;
+    width: 100%;
+  }
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    height: 70px;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 601px) {
+  .mobile {
+    display: none
+  }
+}
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .practice {
+    display: none;
+  }
+  figure {
+    margin: 1rem;
+  }
+  /* Navigation */
+  .logo {
+    justify-content: space-around;
+    width: 100%;
+  }
+  /* Header */
+  .left-side {
+    width: 100%;
+  }
+  .banner {
+    margin: 0 1rem;
+  }
+  .banner h1 {
+    margin: 2rem auto;
+  }
+  .banner a {
+    margin: 1.5rem auto 2rem auto;
+  }
+  /* Side Article */
+  .information {
+    margin-top: 1rem;
+  }
+  .info-image {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  .campus {
+    margin: 4rem 1rem;
+  }
+  .info {
+    margin-left: 1rem;
+  }
+  .lecture {
+    margin-bottom: 2rem;
+  }
+  /* Start Learning */
+  .wrap figure {
+    margin: 0.5rem;
+  }
+  .center-head {
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .start-learning {
+    padding-bottom: 2rem;
+  }
+  .text h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+  .text h3,
+  .text p {
+    display: none;
+  }
+/* Thesis */
+  video {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+  }
 }
